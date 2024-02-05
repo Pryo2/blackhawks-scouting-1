@@ -1,5 +1,5 @@
 {
-  "heading": "Crescendo - 2024",
+  "heading": "IMPI Scouting - 2024",
   "logo": "logo.png",
   "pages": [
     {
@@ -14,7 +14,7 @@
           }
         },
         {
-          "name": "Starting Position",
+          "name": "Click Starting Position",
           "type": "positions",
           "file": "field.png"
         }
@@ -59,12 +59,12 @@
           "align": "center"
         },
         {
-          "name": "Ground",
-          "type": "spinbox"
+          "name": "Can Pick Up From Ground?",
+          "type": "checkbox"
         },
         {
-          "name": "Source",
-          "type": "spinbox",
+          "name": "Can Pick Up From Source?",
+          "type": "checkbox",
           "row": 2,
           "col": 3
         },
@@ -142,27 +142,15 @@
           "name": "Failed Climb",
           "type": "checkbox"
         },
-        {
-          "name": "Robots Onstage",
-          "type": "multicheckbox",
-          "options": [
-            "Stage Left",
-            "Stage Right",
-            "Center Stage"
-          ]
-        },
+
         {
           "name": "Harmony",
           "type": "checkbox"
         },
         {
-          "name": "Trap Note Positions",
-          "type": "multicheckbox",
-          "options": [
-            "Stage Left",
-            "Stage Right",
-            "Center Stage"
-          ]
+          "name": "Scored trap note",
+          "type": "checkbox"
+
         },
         {
           "name": "Mechanical Failures",
@@ -173,7 +161,7 @@
           "type": "textarea"
         },
         {
-          "name": "Stage Positions",
+          "name": "Stage Positions Diagram",
           "type": "heading",
           "colspan": 2,
           "align": "center"
