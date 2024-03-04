@@ -24,7 +24,7 @@
       "name": "Autonomous",
       "widgets": [
         {
-          "name": "Left Starting Zone",
+          "name": "Passed white line",
           "type": "checkbox"
         },
         {
@@ -40,34 +40,12 @@
           "name": "Speaker Notes",
           "type": "spinbox",
           "prefix": "Auto"
-        },
-        {
-          "name": "Trap Notes",
-          "type": "spinbox",
-          "max": 3,
-          "prefix": "Auto"
         }
       ]
     },
     {
       "name": "Teleop",
       "widgets": [
-        {
-          "name": "Picked Up From",
-          "type": "heading",
-          "colspan": 5,
-          "align": "center"
-        },
-        {
-          "name": "Can Pick Up From Ground?",
-          "type": "checkbox"
-        },
-        {
-          "name": "Can Pick Up From Source?",
-          "type": "checkbox",
-          "row": 2,
-          "col": 3
-        },
         {
           "name": "Scoring",
           "type": "heading",
@@ -79,26 +57,8 @@
           "type": "spinbox"
         },
         {
-          "name": "Amplified Speaker Notes",
-          "type": "spinbox",
-          "row": 4,
-          "col": 3
-        },
-        {
           "name": "Amp Notes",
           "type": "spinbox"
-        },
-        {
-          "name": "Trap Notes",
-          "type": "spinbox",
-          "max": 3,
-          "row": 5,
-          "col": 3
-        },
-        {
-          "name": "Co-op Bonus",
-          "type": "checkbox",
-          "col": 2
         },
         {
           "type": "spacer",
@@ -129,9 +89,8 @@
       "widgets": [
         {
           "name": "End Location",
-          "type": "radio",
+          "type": "dropdown",
           "options": [
-            "Onstage and Spotlit",
             "Onstage",
             "Parked",
             "None"
@@ -139,22 +98,9 @@
           "default": 3
         },
         {
-          "name": "Failed Climb",
-          "type": "checkbox"
-        },
-
-        {
-          "name": "Harmony",
-          "type": "checkbox"
-        },
-        {
           "name": "Scored trap note",
           "type": "checkbox"
 
-        },
-        {
-          "name": "Mechanical Failures",
-          "type": "text"
         },
         {
           "name": "Comments",
