@@ -14,9 +14,26 @@
           }
         },
         {
-          "name": "Click Starting Position",
-          "type": "positions",
-          "file": "field.png"
+          "name": "Starting Positions Diagram",
+          "type": "heading",
+          "colspan": 2,
+          "align": "center"
+        },
+        {
+          "type": "picture",
+          "file": "field.png",
+          "colspan": 2,
+          "height": 250
+        },
+        {
+          "name": "Starting Position",
+          "type": "dropdown",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
         }
       ]
     },
@@ -24,22 +41,46 @@
       "name": "Autonomous",
       "widgets": [
         {
-          "name": "Passed white line",
+          "name": "Passed starting line",
           "type": "checkbox"
         },
         {
           "type": "spacer",
-          "height": 20
+          "col": 2
         },
         {
-          "name": "Amp Notes",
+          "name": "Scored first shot",
+          "type": "checkbox"
+        },
+        {
+          "type": "spacer",
+          "height": 10
+        },
+        {
+          "name": "Close Speaker Notes",
           "type": "spinbox",
           "prefix": "Auto"
         },
         {
-          "name": "Speaker Notes",
+          "type": "spacer",
+          "height": 10
+        },
+        {
+          "name": "Far Speaker Notes",
           "type": "spinbox",
           "prefix": "Auto"
+        },
+        {
+          "name": "Notes Diagram",
+          "type": "heading",
+          "colspan": 2,
+          "align": "center"
+        },
+        {
+          "type": "picture",
+          "file": "half.PNG",
+          "colspan": 2,
+          "height": 250
         }
       ]
     },
@@ -79,6 +120,11 @@
         },
         {
           "name": "Tipped",
+          "type": "checkbox",
+          "col": 2
+        },
+        {
+          "name": "Mechanical Failure",
           "type": "checkbox",
           "col": 2
         }
