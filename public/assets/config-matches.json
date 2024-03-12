@@ -78,7 +78,7 @@
         },
         {
           "type": "picture",
-          "file": "half.png",
+          "file": "half.PNG",
           "colspan": 2,
           "height": 250
         }
