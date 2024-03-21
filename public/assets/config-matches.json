@@ -57,7 +57,7 @@
           "height": 10
         },
         {
-          "name": "Close Speaker Notes",
+          "name": "Close Notes Scored",
           "type": "spinbox",
           "prefix": "Auto"
         },
@@ -66,7 +66,7 @@
           "height": 10
         },
         {
-          "name": "Far Speaker Notes",
+          "name": "Far Notes Scored",
           "type": "spinbox",
           "prefix": "Auto"
         },
@@ -78,7 +78,7 @@
         },
         {
           "type": "picture",
-          "file": "half.PNG",
+          "file": "half.png",
           "colspan": 2,
           "height": 250
         }
@@ -151,20 +151,12 @@
         {
           "name": "Comments",
           "type": "textarea"
-        },
-        {
-          "name": "Stage Positions Diagram",
-          "type": "heading",
-          "colspan": 2,
-          "align": "center"
-        },
-        {
-          "type": "picture",
-          "file": "stage.png",
-          "colspan": 2,
-          "height": 250
         }
       ]
     }
   ]
 }
+// fix startpos diagram
+// make none default in endgame
+// create auton note limits
+// rephrase auton
