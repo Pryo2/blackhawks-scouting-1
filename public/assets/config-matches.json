@@ -1,10 +1,29 @@
 {
-  "heading": "IMPI Scouting - 2024",
+  "heading": "Impi Scouting - 2024",
   "logo": "logo.png",
+  "skipTeamSelection": true,
   "pages": [
     {
       "name": "Setup",
+      "color":"red",
       "widgets": [
+        {
+          "name": "Match Number",
+          "type": "number",
+          "validation": {
+            "comparison": "greater",
+            "value": 0
+          }
+        },
+        {
+          "name": "Team Number",
+          "type": "number",
+          "validation": {
+            "comparison": "greater",
+            "value": 0
+          }
+        },
+
         {
           "name": "Scouter Name",
           "type": "text",
@@ -12,18 +31,6 @@
             "comparison": "greater",
             "value": 0
           }
-        },
-        {
-          "name": "Starting Positions Diagram",
-          "type": "heading",
-          "colspan": 2,
-          "align": "center"
-        },
-        {
-          "type": "picture",
-          "file": "field.png",
-          "colspan": 2,
-          "height": 250
         },
         {
           "name": "Starting Position",
@@ -34,7 +41,14 @@
             "3",
             "4"
           ]
+        },
+        {
+          "type": "picture",
+          "file": "field.png",
+          "colspan": 2,
+          "height": 250
         }
+        
       ]
     },
     {
@@ -95,11 +109,13 @@
         },
         {
           "name": "Speaker Notes",
-          "type": "spinbox"
+          "type": "spinbox",
+          "col": 2
         },
         {
           "name": "Amp Notes",
-          "type": "spinbox"
+          "type": "spinbox",
+          "col": 2
         },
         {
           "type": "spacer",
@@ -119,11 +135,6 @@
           "col": 2
         },
         {
-          "name": "Tipped",
-          "type": "checkbox",
-          "col": 2
-        },
-        {
           "name": "Mechanical Failure",
           "type": "checkbox",
           "col": 2
@@ -137,15 +148,17 @@
           "name": "End Location",
           "type": "dropdown",
           "options": [
-            "Onstage",
+            "None",
             "Parked",
-            "None"
+            "Onstage"
           ],
-          "default": 3
+          "default": 3,
+          "col": 1
         },
         {
           "name": "Scored trap note",
-          "type": "checkbox"
+          "type": "checkbox",
+          "col": 1
 
         },
         {

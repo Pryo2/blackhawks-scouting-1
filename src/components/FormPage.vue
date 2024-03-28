@@ -47,5 +47,6 @@ defineExpose({ title: props.title, setShown: (value: boolean) => show = value })
 
 .page-heading {
   text-align: center;
+  color: #0f0;
 }
 </style>
