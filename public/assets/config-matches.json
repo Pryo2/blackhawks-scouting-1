@@ -1,10 +1,29 @@
 {
-  "heading": "IMPI Scouting - 2024",
+  "heading": "Impi Scouting - 2024",
   "logo": "logo.png",
+  "skipTeamSelection": true,
   "pages": [
     {
       "name": "Setup",
+      "color":"red",
       "widgets": [
+        {
+          "name": "Match Number",
+          "type": "number",
+          "validation": {
+            "comparison": "greater",
+            "value": 0
+          }
+        },
+        {
+          "name": "Team Number",
+          "type": "number",
+          "validation": {
+            "comparison": "greater",
+            "value": 0
+          }
+        },
+
         {
           "name": "Scouter Name",
           "type": "text",
@@ -14,32 +33,68 @@
           }
         },
         {
-          "name": "Click Starting Position",
-          "type": "positions",
-          "file": "field.png"
+          "name": "Starting Position",
+          "type": "dropdown",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ]
+        },
+        {
+          "type": "picture",
+          "file": "field.png",
+          "colspan": 2,
+          "height": 250
         }
+        
       ]
     },
     {
       "name": "Autonomous",
       "widgets": [
         {
-          "name": "Passed white line",
+          "name": "Passed starting line",
           "type": "checkbox"
         },
         {
           "type": "spacer",
-          "height": 20
+          "col": 2
         },
         {
-          "name": "Amp Notes",
+          "name": "Scored first shot",
+          "type": "checkbox"
+        },
+        {
+          "type": "spacer",
+          "height": 10
+        },
+        {
+          "name": "Close Notes Scored",
           "type": "spinbox",
           "prefix": "Auto"
         },
         {
-          "name": "Speaker Notes",
+          "type": "spacer",
+          "height": 10
+        },
+        {
+          "name": "Far Notes Scored",
           "type": "spinbox",
           "prefix": "Auto"
+        },
+        {
+          "name": "Notes Diagram",
+          "type": "heading",
+          "colspan": 2,
+          "align": "center"
+        },
+        {
+          "type": "picture",
+          "file": "half.png",
+          "colspan": 2,
+          "height": 250
         }
       ]
     },
@@ -54,11 +109,13 @@
         },
         {
           "name": "Speaker Notes",
-          "type": "spinbox"
+          "type": "spinbox",
+          "col": 2
         },
         {
           "name": "Amp Notes",
-          "type": "spinbox"
+          "type": "spinbox",
+          "col": 2
         },
         {
           "type": "spacer",
@@ -78,7 +135,7 @@
           "col": 2
         },
         {
-          "name": "Tipped",
+          "name": "Mechanical Failure",
           "type": "checkbox",
           "col": 2
         }
@@ -91,32 +148,22 @@
           "name": "End Location",
           "type": "dropdown",
           "options": [
-            "Onstage",
+            "None",
             "Parked",
-            "None"
+            "Onstage"
           ],
-          "default": 3
+          "default": 3,
+          "col": 1
         },
         {
           "name": "Scored trap note",
-          "type": "checkbox"
+          "type": "checkbox",
+          "col": 1
 
         },
         {
           "name": "Comments",
           "type": "textarea"
-        },
-        {
-          "name": "Stage Positions Diagram",
-          "type": "heading",
-          "colspan": 2,
-          "align": "center"
-        },
-        {
-          "type": "picture",
-          "file": "stage.png",
-          "colspan": 2,
-          "height": 250
         }
       ]
     }
